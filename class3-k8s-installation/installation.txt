@@ -69,7 +69,7 @@ systemctl restart docker
 systemctl enable docker
 
 *********************************************************************************
-run this below command in only Server (Master node).coz we are going to make node1 as kube master
+run this below command in only Server (Master node).coz we are going to make master machine as kube master
 
 kubeadm init --apiserver-advertise-address $(hostname -i) --pod-network-cidr=192.168.0.0/16
 mkdir -p $HOME/.kube
