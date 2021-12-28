@@ -16,7 +16,7 @@ kubectl delete -f https://raw.githubusercontent.com/cloudnloud/Kubernetes_Admin_
 kubectl apply -f https://raw.githubusercontent.com/cloudnloud/Kubernetes_Admin_Training/main/class8-replicaset/replicaset/2-singlepod-singlereplica.yml
 
 kubectl get all -n facebook
-kubectl describe replicas -n facebook
+kubectl describe rs -n facebook
 
 kubectl get pod,service,replicaset -n facebook -o wide
 
